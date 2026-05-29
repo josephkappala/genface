@@ -96,28 +96,28 @@ export function GeneratorCard() {
 
   return (
     <>
-      <section className="relative px-4 py-8 sm:px-6 lg:px-8 lg:py-12" id="generator">
-        <div className="absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_70%_25%,rgba(99,102,241,0.12),rgba(255,255,255,0)_55%)]" />
-        <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+      <section className="relative px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14" id="generator">
+        <div className="absolute inset-x-0 top-0 -z-10 h-[28rem] bg-[radial-gradient(circle_at_70%_25%,rgba(99,102,241,0.12),rgba(255,255,255,0)_55%)]" />
+        <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-bold text-blue-700 shadow-sm">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-bold text-blue-700 shadow-sm">
               <Sparkles className="h-4 w-4 text-amber-400" />
               AI-Powered Profile Photos
             </div>
 
-            <h1 className="max-w-3xl text-5xl font-black leading-[0.98] tracking-normal text-slate-950 sm:text-6xl lg:text-[5rem] xl:text-[5.4rem]">
+            <h1 className="max-w-3xl text-4xl font-black leading-[1.02] tracking-normal text-slate-950 sm:text-5xl lg:text-6xl xl:text-7xl">
               <span className="block">Your perfect</span>
               <span className="block">profile.</span>
-              <span className="mt-5 block bg-gradient-to-r from-blue-600 to-violet-500 bg-clip-text text-transparent">
+              <span className="mt-3 block bg-gradient-to-r from-blue-600 to-violet-500 bg-clip-text text-transparent">
                 Every platform.
               </span>
-              <span className="mt-5 block">Every style.</span>
+              <span className="mt-3 block">Every style.</span>
               <span className="block bg-gradient-to-r from-blue-600 to-violet-500 bg-clip-text text-transparent">
                 Instantly.
               </span>
             </h1>
 
-            <p className="mt-7 max-w-xl text-xl font-medium leading-8 text-slate-500">
+            <p className="mt-5 max-w-xl text-lg font-medium leading-7 text-slate-500">
               Generate AI-powered profile photos for Instagram, LinkedIn,
               Facebook, X, and more. Professional quality in seconds.
             </p>
@@ -125,8 +125,8 @@ export function GeneratorCard() {
             <HeroTransformationPreview />
           </div>
 
-          <div className="mx-auto w-full max-w-lg rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-[0_28px_90px_rgba(15,23,42,0.12)] sm:p-8">
-            <div className="space-y-7">
+          <div className="mx-auto w-full max-w-md rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_24px_70px_rgba(15,23,42,0.12)] sm:p-6">
+            <div className="space-y-5">
               <div>
                 <h2 className="mb-3 text-base font-bold text-slate-950">
                   Upload Photo <span className="text-slate-500">(Optional)</span>
@@ -222,7 +222,7 @@ async function createDemoImageFile() {
 
 function HeroTransformationPreview() {
   return (
-    <div className="mt-10 max-w-3xl">
+    <div className="mt-7 max-w-2xl">
       <img
         src="/hero-transformation-preview.png"
         alt="Original profile transformed into six AI-generated profile styles"
